@@ -19,30 +19,36 @@
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
+            width: 500px;
         }
 
         h1 {
             text-align: center;
         }
 
-        .input-container, .filter-container {
+        .input-container {
             display: flex;
             gap: 10px;
             margin-bottom: 10px;
+            align-items: center;
+            justify-content: space-between;
         }
 
         input {
-            flex: 1;
+            flex-grow: 1;
             padding: 8px;
+            font-size: 14px;
         }
 
         button {
+            width: 80px; 
             padding: 8px;
+            font-size: 14px;
             background-color: blue;
             color: white;
             border: none;
             cursor: pointer;
+            white-space: nowrap; 
         }
 
         ul {
@@ -64,12 +70,11 @@
         <div class="input-container">
             <input type="text" id="taskInput" placeholder="Enter a new task">
             <button id="addTaskBtn">Add Task</button>
-        </div>
-        <div class="filter-container">
             <input type="text" id="filterInput" placeholder="Filter tasks">
         </div>
         <ul id="taskList"></ul>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
